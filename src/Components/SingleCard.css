@@ -1,0 +1,44 @@
+.card{
+    position: relative;
+}
+
+.card img{
+    width: 100%;
+    display: block;
+    border: 2px solid #fff;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+}
+.card .front{
+    transform:  rotateY(90deg);
+    transition: all ease-in 0.2s;
+    position: absolute;
+    -webkit-transform:  rotateY(90deg);
+    -moz-transform:  rotateY(90deg);
+    -ms-transform:  rotateY(90deg);
+    -o-transform:  rotateY(90deg);
+    -webkit-transition: all ease-in 0.2s;
+    -moz-transition: all ease-in 0.2s;
+    -ms-transition: all ease-in 0.2s;
+    -o-transition: all ease-in 0.2s;
+}
+.flipped .front{
+    transform: rotateY(0deg);
+    transition-delay: 0.2s;
+    -webkit-transform: rotateY(0deg);
+    -moz-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    -o-transform: rotateY(0deg);
+}
+
+.flipped .back{
+    transform: rotateY(90deg);
+    transition-delay: 0s;
+    -webkit-transform: rotateY(90deg);
+    -moz-transform: rotateY(90deg);
+    -ms-transform: rotateY(90deg);
+    -o-transform: rotateY(90deg);
+}
